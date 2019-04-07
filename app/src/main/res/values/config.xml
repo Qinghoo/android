@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="serverurl">http://10.10.25.250:8080/news/news.xml</string>
+</resources>

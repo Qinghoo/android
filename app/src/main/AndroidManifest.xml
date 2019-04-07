@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="product.itcast.cn.a239">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main_Activity"
+            android:label="主页面"/>
+        <activity android:name=".Register"
+            android:label="注册"/>
+        <activity android:name=".Resetpwd"
+            android:label="修改信息"></activity>
+        <activity android:name=".Userview"
+            android:label="数据展示"></activity>
+        <activity android:name=".viewMainActivity"
+            android:label="商品展示"></activity>
+        <activity android:name=".Neirongtigong"
+            android:label="插入数据"></activity>
+        <activity android:name=".Neirongfangwen"
+            android:label="访问数据"></activity>
+        <activity android:name=".DiaoyongService"
+            android:label="调用服务"></activity>
+        <activity android:name=".Newsmain"
+            android:label="新闻服务"></activity>
+        <activity android:name=".Guaka"
+            android:label="刮刮卡"></activity>
+
+
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="product.itcast.cn.a239.conyentprovider"
+            android:exported="true">
+        </provider>
+        <receiver android:name=".Guangbojieshou">
+            <intent-filter>
+                <action android:name="com.insert"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".ALiPayService">
+            <intent-filter>
+                <action android:name="forIService"/>
+            </intent-filter>
+        </service>
+
+    </application>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+
+</manifest>

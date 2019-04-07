@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/menu_1"
+        android:gravity="right|center"
+        android:orientation="vertical" >
+        >
+        <Button
+            android:id="@+id/cenclefamgwen_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_selector"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:text="返回"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/insert_btn"
+        android:text="插入一条数据"
+        android:onClick="send1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_btn"
+        android:text="删除一条数据"
+        android:onClick="send2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_btn"
+        android:text="更新一条数据"
+        android:onClick="send3"/>
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/query_btn"
+    android:text="查询一条数据"
+        android:onClick="send4"/>
+
+
+</LinearLayout>

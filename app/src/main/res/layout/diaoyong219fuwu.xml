@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <Button
+        android:id="@+id/no86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/no66"
+        android:layout_below="@+id/no76"
+        android:layout_marginTop="40dp"
+
+        android:text="返回" />
+        <Button
+            android:id="@+id/no76"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/no66"
+            android:layout_below="@+id/no66"
+            android:layout_marginTop="40dp"
+
+            android:text="解除绑定" />
+
+        <Button
+            android:id="@+id/no56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+
+            android:text="绑定支付宝" />
+
+        <Button
+            android:id="@+id/no66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/no56"
+            android:layout_marginTop="34dp"
+
+            android:text="调用支付方法" />
+
+    </RelativeLayout>
+
+
